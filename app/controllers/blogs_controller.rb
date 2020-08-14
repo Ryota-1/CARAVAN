@@ -6,6 +6,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+    # params[:id]の部分でどのブログなのかを判断（Blog１やBlog２など）
     @blog = Blog.find(params[:id])
   end
 
